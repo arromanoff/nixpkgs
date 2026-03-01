@@ -25,8 +25,13 @@ let
     "18.1.8".officialRelease.sha256 = "sha256-iiZKMRo/WxJaBXct9GdAcAT3cz9d9pnAcO1mmR6oPNE=";
     "19.1.7".officialRelease.sha256 = "sha256-cZAB5vZjeTsXt9QHbP5xluWNQnAHByHtHnAhVDV0E6I=";
     "20.1.8".officialRelease.sha256 = "sha256-ysyB/EYxi2qE9fD5x/F2zI4vjn8UDoo1Z9ukiIrjFGw=";
-    "21.1.8".officialRelease.sha256 = "sha256-pgd8g9Yfvp7abjCCKSmIn1smAROjqtfZaJkaUkBSKW0=";
     "22.1.0-rc3".officialRelease.sha256 = "sha256-vGG7lDdDFW427lS384Bl7Pt9QFgK1XVxLmtm878xmxU=";
+    "21.0.0-git".monorepoSrc = pkgs.fetchFromGitHub {
+      owner = "bloomberg";
+      repo = "clang-p2996";
+      rev = "2ea0a79fe7bb5f6fdb8c687ba0e21ab63696e7f7";
+      hash = "sha256-uvAAYsUH+4WJTsf7/kB0v2ZsiVj1pekQ0f/pJwXU1rI=";
+    };
     "23.0.0-git".gitRelease = {
       rev = "610b40706ff74d2e7785937ed03baa364652dc61";
       rev-version = "23.0.0-unstable-2026-02-23";
