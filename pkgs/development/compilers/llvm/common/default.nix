@@ -32,9 +32,8 @@
   ...
 }@args:
 
-assert lib.assertMsg (lib.xor (gitRelease != null) (officialRelease != null)) (
-  "must specify `gitRelease` or `officialRelease`"
-  + (lib.optionalString (gitRelease != null) " — not both")
+assert lib.assertMsg (lib.xor (lib.xor (gitRelease != null) (officialRelease != null)) (monorepoSrc != null)) (
+  "must specify one of [ gitRelease, officialRelease, monorepoSrc ]"
 );
 
 let
